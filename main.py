@@ -971,8 +971,4 @@ def handle_request_route():
 # =========================================================================
 
 if __name__ == '__main__':
-    # Vercel-specific configuration: Vercel sets the port via environment variables.
-    port = int(os.environ.get("PORT", 8080))
-    # Note: On Vercel, the entry point is usually a WSGI server (like Gunicorn)
-    # running 'app:app', but this ensures local testing works as requested.
-    app.run(host="0.0.0.0", port=port, debug=True)
+    app.run(host='0.0.0.0', port=5000)
